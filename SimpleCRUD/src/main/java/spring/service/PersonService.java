@@ -41,22 +41,15 @@ public class PersonService {
         }
         // removeIf(p -> p.getId() == id); другой вариант написания с помощью лямбды
     }
-    public void edit(Integer id, Person person) {
-        Person changed = new Person();
-        changed.setFirstName(person.getFirstName());
-        changed.setLastName(person.getLastName());
-        changed.setId();
-        person = persons.get(id);
-        persons.set(person.getId(), changed);
-//        update(person.getId(), changed);
-    }
 
-//    public List<Person> update(Integer id, Person person) {
-//        List<Person> updated = new ArrayList<>();
-//        updated.add(id, person);
-//        updated.addAll(persons);
-//        return updated;
-//    }
+    public void edit(Integer id, Person person) {
+        Person newPerson = persons.get(id);
+        if (newPerson != null) {
+            newPerson.update(person.getFirstName(), person.getLastName());
+           // newPerson.setId();
+            persons.set(id, newPerson);
+        }
+    }
 
 
     public Person getPersonById(int id) {

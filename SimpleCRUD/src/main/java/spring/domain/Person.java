@@ -31,8 +31,8 @@ public class Person {
         return lastName;
     }
 
-    public int setId() {
-        return id;
+    public void setId() {
+
     }
 
     public void setFirstName(String firstName) {
@@ -40,6 +40,11 @@ public class Person {
     }
 
     public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void update(String firstName, String lastName) {
+        this.firstName = firstName;
         this.lastName = lastName;
     }
 }
