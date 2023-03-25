@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Telran" uuid="da950b4b-16a4-47f7-8cbb-b1e7246ab063">
+    <data-source source="LOCAL" name="Telran" uuid="b0201f38-3790-427c-9cf9-3362f07a27a7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

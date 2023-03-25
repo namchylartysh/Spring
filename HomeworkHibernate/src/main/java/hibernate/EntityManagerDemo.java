@@ -15,7 +15,7 @@ public class EntityManagerDemo {
         // Из фабрики создаем EntityManager
         EntityManager em = factory.createEntityManager();
 
-        Person person = new Person("Sidor", "Sidorov");
+        Person person = new Person("Andrei", "Andreev");
 
         // Открываем транзакцию
 //        em.getTransaction().begin();
@@ -23,26 +23,21 @@ public class EntityManagerDemo {
 //        em.getTransaction().commit();
 
         // search
-        em.getTransaction().begin();
-        Person foundPerson = em.find(Person.class, 1);
-        em.getTransaction().commit();
-        System.out.println(foundPerson);
+//        em.getTransaction().begin();
+//        Person foundPerson = em.find(Person.class, 1);
+//        em.getTransaction().commit();
+//        System.out.println(foundPerson);
 
         // update / edit
-        foundPerson.setLastname("Ivanovic");
-        em.getTransaction().begin();
-        em.merge(foundPerson);
-        em.getTransaction().commit();
+//        foundPerson.setLastname("Ivanovic");
+//        em.getTransaction().begin();
+//        em.merge(foundPerson);
+//        em.getTransaction().commit();
 
         // delete
         em.getTransaction().begin();
-        Person removedPerson = em.find(Person.class, 3);
+        Person removedPerson = em.find(Person.class, 9);
         em.remove(removedPerson);
         em.getTransaction().commit();
-
-
-
     }
-
-
 }
