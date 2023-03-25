@@ -5,7 +5,12 @@ import spring.config.AppConfig;
 import spring.domain.Person;
 import spring.service.PersonService;
 
-import java.util.List;
+/**
+ * Java Professional Homework #37
+ *
+ * @author Artysh
+ * @version 23.03 - 27.03
+ */
 
 public class Application {
     public static void main(String[] args) {
